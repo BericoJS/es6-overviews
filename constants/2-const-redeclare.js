@@ -1,5 +1,6 @@
 "use strict";
 
-const foo = 10;
+// cannot redeclare a const
 
-const foo = 100;
+const foo = 10;
+const foo = 100; // fail

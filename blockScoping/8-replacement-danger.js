@@ -1,14 +1,20 @@
-if (true) {
-  var foo = 42;
-} else {
-  var foo = "Hello World";
-}
-console.log(foo);
+// this shows the dangers of just globally replacing vars with lets.
 
+// this (arguably bad) code works just fine.  It creates foo on the top level
+// scope because the if blocks do not create their own scope
+if (true) {
+  var foo = 100;
+} else {
+  var foo = "huh?";
+}
+console.log(foo) // 100
+
+// if you outright replace the vars with lets, you end up with this
+// which does not work.
 // "use strict";
 // if (true) {
-//   let foo = 42;
+//   let foo = 100;
 // } else {
-//   let foo = "Hello World";
+//   let foo = "huh?";
 // }
-// console.log(foo)
+// console.log(foo) // fail
