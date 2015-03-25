@@ -9,7 +9,3 @@ let (b, c) { // fail
     console.log("foo")
   }
 }
-
-
-
-
