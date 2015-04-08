@@ -1,0 +1,23 @@
+<script>
+// => binds to the calling scope
+// Run in browser
+
+"use strict";
+
+var asyncFunc = function(cb) {
+  cb();
+};
+
+function Person() {
+  this.age = 100;
+  this.do = function() {
+    console.log(this.age);
+    asyncFunc( () => {
+      console.log(this.age);
+    });
+  }
+}
+
+new Person().do();
+
+</script>

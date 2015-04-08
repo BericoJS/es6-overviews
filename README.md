@@ -4,6 +4,9 @@
 * Install the latest iojs.  I suggest using [nvm](https://github.com/creationix/nvm) to manage toggling between node versions.
 * Run files at command line: `node 2-reuse-error.js`
 
+## For arrow functions:
+* node --harmony_arrow_functions 1-statements.js
+
 ## Berico: to contribute new set of examples
 * Make folder at root that corresponds to [babel transformer name](https://babeljs.io/docs/usage/transformers/).
 * Add `1-`, `2-` style examples of es6 feature

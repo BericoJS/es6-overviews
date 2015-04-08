@@ -11,3 +11,4 @@ const foo = { bar: "baz" };
 foo.bar = "foo"; // ok!
 
 
+m
