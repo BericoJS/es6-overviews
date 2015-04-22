@@ -1,0 +1,14 @@
+<script>
+"use strict";
+
+var test = function(a = blah()) {
+  return a;
+}
+
+var answer1 = test("test");
+console.log(answer1);
+
+var answer2 = test();
+console.log(answer2);
+
+</script>
