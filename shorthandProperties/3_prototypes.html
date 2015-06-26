@@ -1,0 +1,19 @@
+<script>
+
+var foo = {
+  add() {
+    return this.a + this.b;
+  }
+};
+
+var bar = {
+  __proto__: foo,
+  a:5,
+  b:2
+};
+
+console.log(bar.add())
+console.log(bar.hasOwnProperty("a"));
+console.log(bar.hasOwnProperty("__proto__"));
+
+</script>

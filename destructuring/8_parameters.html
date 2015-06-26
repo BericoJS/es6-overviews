@@ -1,0 +1,32 @@
+<script>
+
+// var user = {
+//   id:"1234",
+//   name: {
+//     first:"Sally",
+//     last:"Smith"
+//   }
+// };
+//
+// var prettyName = function({name:{first, last}}) {
+//   console.log(first + " " + last);
+// };
+//
+// prettyName(user);
+
+var foo = function({bar:baz}) {
+  console.log(baz);
+};
+
+// var foo = function({bar, baz}) {
+//   console.log(bar);
+// };
+
+foo({
+  bar:"hello world",
+  baz:"hi",
+  what:"hi2"
+
+});
+
+</script>

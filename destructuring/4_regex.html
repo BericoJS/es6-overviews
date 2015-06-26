@@ -1,0 +1,7 @@
+<script>
+
+var url = "https://www.donaldjtrump.com/news/category/video/";
+var [, protocol, fullhost, fullpath] = /^(\w+)\:\/\/([^\/]+)\/(.*)$/.exec(url);
+console.log([protocol, fullhost, fullpath].join( " || " ));
+
+</script>

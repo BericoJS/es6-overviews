@@ -1,0 +1,12 @@
+<script>
+var pre = 0, cur = 1;
+var next = function() {
+  [pre, cur] = [cur, pre + cur]; // no temporary variables required
+};
+
+while (cur < 10000) {
+  console.log(cur);
+  next();
+}
+
+</script>

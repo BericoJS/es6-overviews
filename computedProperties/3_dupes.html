@@ -1,0 +1,19 @@
+<script>
+"use strict";
+
+// duplication possible at runtime
+// so no syntax error
+
+var foo = {
+  bar:1,
+  bar:2
+};
+
+console.log(foo);
+
+var baz = {
+  __proto__: foo,
+  __proto__: foo
+}
+
+</script>

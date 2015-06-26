@@ -1,0 +1,17 @@
+<script>
+
+var toObject = function(bar, baz) {
+  return {
+    bar:bar, // <= yay!
+    baz, // <= woo!
+    toString() {  // <= less typey!
+      return [bar, baz].join(" ");
+    }
+  };
+};
+
+var object = toObject("one", "two");
+
+console.log("%c" + object.toString(), "color:red; font-size:100px");
+
+</script>

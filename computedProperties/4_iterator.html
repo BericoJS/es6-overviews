@@ -1,0 +1,21 @@
+<script>
+
+var fibonacci = {
+  [Symbol.iterator]: function() {
+  // [Symbol.iterator]() {
+    var pre = 0, cur = 1;
+    return {
+      next: function() {
+      //next() {
+        [pre, cur] = [cur, pre + cur];
+        return { done: cur > 100000, value: cur };
+      }
+    }
+  }
+}
+
+for (var n of fibonacci) {
+  console.log(n);
+}
+
+</script>

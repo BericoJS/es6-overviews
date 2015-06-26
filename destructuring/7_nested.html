@@ -1,0 +1,17 @@
+<script>
+
+var obj = {
+  a:"1",
+  b: {
+    c:"2"
+  },
+  d:"3"
+};
+
+// var {a, b, d} = obj;
+// console.log([a, b, d].join("\n"));
+
+var {a, b: {c}, d} = obj;
+console.log([a, c, d].join("\n"));
+
+</script>

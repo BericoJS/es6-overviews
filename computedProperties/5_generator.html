@@ -1,0 +1,19 @@
+
+<script>
+// generator shorthand, you know, for way later
+var foo = {
+  // [Symbol.iterator]: function *() {
+  * [Symbol.iterator]() {
+
+    var i = 0;
+    while (i < 100) {
+      yield i++;
+    }
+  }
+};
+
+for (var i of foo) {
+  console.log(i);
+}
+
+</script>
