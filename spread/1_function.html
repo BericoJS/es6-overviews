@@ -1,0 +1,19 @@
+<script>
+
+var out = function() {
+  for (var i = 0, iLen = arguments.length; i < iLen; i++) {
+    console.log(arguments[i]);
+  }
+};
+
+var args = [1, 2, 3, 4, 5, 6, 7];
+
+// out.apply(null, args);
+// console.log("*******");
+// out(...args);
+// console.log("*******");
+out("###", ...args, "^^^");
+
+
+
+</script>
